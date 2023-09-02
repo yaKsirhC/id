@@ -45,7 +45,7 @@ export default function Sidebar() {
     const signOut = async () => {
         destroyCookie(undefined, 'nextauth.refreshtoken', { path: '/' })
         destroyCookie(undefined, 'nextauth.token', { path: '/' })
-        window.location.href = 'https://cliq.live/'
+        window.location.href = 'https://id-sepia.vercel.app/'
     }
 
     return (
@@ -63,7 +63,7 @@ export default function Sidebar() {
                             tabs.filter(e => e.admin === true).map((t) => {
                                 return (
                                     <div key={t.route} onClick={() => {
-                                        window.location.href = `https://cliq.live${t.route}`
+                                        window.location.href = `https://id-sepia.vercel.app${t.route}`
                                     }} className={`mt-3 cursor-pointer flex flex-row items-center ${router.pathname === t.route ? 'bg-blue-100' : 'text-slate-500 hover:bg-blue-50 transition-all duration-300'} p-2`}>
                                         <div className="text-xl">{t.icon}</div>
                                         <p className="ml-2 hidden lg:block">{t.name}</p>
@@ -74,7 +74,7 @@ export default function Sidebar() {
                             tabs.filter(e => e.admin === false).map((t) => {
                                 return (
                                     <div key={t.route} onClick={() => {
-                                        window.location.href = `https://cliq.live${t.route}`
+                                        window.location.href = `https://id-sepia.vercel.app${t.route}`
                                     }} className={`mt-3 cursor-pointer flex flex-row items-center ${router.pathname === t.route ? 'bg-blue-100' : 'text-slate-500 hover:bg-blue-50 transition-all duration-300'} p-2`}>
                                         <div className="text-xl">{t.icon}</div>
                                         <p className="ml-2 hidden lg:block">{t.name}</p>
