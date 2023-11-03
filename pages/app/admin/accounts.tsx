@@ -56,13 +56,13 @@ export default function AppHome() {
     const [name, setName] = useState<string>('')
     const [username, setUsername] = useState<string>('')
     const [password, setPassword] = useState<string>('')
-    const [email, setEmail] = useState<string>('')
+    // const [email, setEmail] = useState<string>('')
 
     const createAccount = async () => {
 
         if (requesting) return
 
-        if (identifier === '' || username === '' || password === '' || name === '' || email === '') {
+        if (identifier === '' || username === '' || password === '' || name === '') {
             toast.warning('Please, fill the form')
             return
         }
@@ -75,7 +75,6 @@ export default function AppHome() {
             username,
             name,
             password,
-            email
         })
         .then((res) => {
 
