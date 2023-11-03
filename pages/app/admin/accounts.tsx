@@ -75,7 +75,7 @@ export default function AppHome() {
             username,
             name,
             password,
-            email: "email",
+            email: "email@email.com",
         })
         .then((res) => {
 
