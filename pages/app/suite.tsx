@@ -11,4 +11,4 @@ export default function AppHome() {
     )
 }
 
-export const getServerSideProps = isAuth()
+// export const getServerSideProps = isAuth()
