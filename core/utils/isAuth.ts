@@ -71,7 +71,8 @@ export function isAuth() {
             if (!user.verified && !user.admin && path !== '/app/validation') {
                 return {
                     redirect: {
-                        destination: '/app/validation',
+                        // ATTENTION!
+                        destination: '/app/suite',
                         permanent: false
                     }
                 }

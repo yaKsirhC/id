@@ -5,6 +5,7 @@ import { isAuth } from "../../core/utils/isAuth"
 export default function Validation() {
 
     const { user } = useContext(UserContext)
+    
 
     return (
         <div className="w-full h-screen flex flex-col items-center justify-center">

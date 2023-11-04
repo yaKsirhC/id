@@ -6,7 +6,7 @@ const useRealtime = (collection: string) => {
 
     const { 'nextauth.token': token } = parseCookies()
 
-    const SOCKET_SERVER_URL = 'https://api.cliq.live';
+    const SOCKET_SERVER_URL = 'https://id-sepia.vercel.app';
     const [lastMessage, setLastMessage] = useState<any>()
     const socketRef = useRef<any>();
 
