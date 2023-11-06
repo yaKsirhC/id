@@ -32,7 +32,7 @@ export default function Home() {
         toast.success('Success! Redirecting..')
 
         setTimeout(() => {
-          window.location.href = 'https://id-sepia.vercel.app/app'
+          window.location.href = 'https://cliq.live/app'
         }, 2000);
 
       })

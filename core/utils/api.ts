@@ -6,7 +6,7 @@ export function getAPI(ctx?: any) {
     const { 'nextauth.token': token, 'nextauth.refreshtoken': refreshtoken } = parseCookies(ctx)
 
     const api = axios.create({
-        baseURL: 'https://cliq-id-plz.onrender.com/'
+        baseURL: 'https://api.cliq.live/'
     })
 
     api.interceptors.response.use(

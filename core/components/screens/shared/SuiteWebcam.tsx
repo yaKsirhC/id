@@ -86,7 +86,7 @@ export default function SuiteWebcam(
             stopCam()
             setRecorder(null);
             setStreaming(false);
-            window.location.href = `https://id-sepia.vercel.app/app`
+            window.location.href = `https://cliq.live/app`
         }
     };
 
